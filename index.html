@@ -40,6 +40,72 @@
                     </li>
                 </ul>
             </address>
+
+            <button type="button" class="button-burger" data-menu-open>
+                <svg class="burger" width="32px" height="22px">
+                    <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                </svg>
+            </button>
+        </div>
+
+        <!--   ----- Mob-menu -----   -->
+        <div class="mob-menu is-hidden" data-menu>
+            <button type="button" class="close-icon-modal" data-menu-close>
+                <svg class="close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <ul class="list mob-menu-navigation">
+                <li><a href="./index.html" class="mob-menu-nav link current">Studio</a></li>
+                <li>
+                    <a href="./portfolio.html" class="mob-menu-nav link">Portfolio</a>
+                </li>
+                <li><a href="" class="mob-menu-nav link">Contacts</a></li>
+            </ul>
+            <div>
+                <address class="mob-menu-address">
+                    <ul class="mob-menu-address-list list">
+                        <li>
+                            <a href="tel:+110001111111" class="mob-menu-tel link">+11 (000) 111-11-11</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@devstudio.com" class="mob-menu-email link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <div class="footer-social">
+                    <ul class="footer-soc-list list">
+                        <li class="team-soc-item">
+                            <a href="" class="footer-soc-link link" target="_blank" rel="noreferrer noopener">
+                                <svg class="footer-soc-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-soc-item">
+                            <a href="" class="footer-soc-link link" target="_blank" rel="noreferrer noopener">
+                                <svg class="footer-soc-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-soc-item">
+                            <a href="" class="footer-soc-link link" target="_blank" rel="noreferrer noopener">
+                                <svg class="footer-soc-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-soc-item">
+                            <a href="" class="footer-soc-link link" target="_blank" rel="noreferrer noopener">
+                                <svg class="footer-soc-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -54,7 +120,7 @@
         <section class="section">
             <div class="container container-strategy">
                 <h2 class="visually-hidden" hidden>Features</h2>
-                <ul class="list">
+                <ul class="list list-strat">
                     <li class="strategy-list">
                         <div class="strategy-item">
                             <svg class="strategy-icon" width="64" height="64">
@@ -112,13 +178,16 @@
                 <h2 class="section-title">What are we doing</h2>
                 <ul class="list">
                     <li class="work-list">
-                        <img src="./images/img1.jpg" alt="Computer" width="360" height="300" />
+                        <img srcset="./images/img1.jpg, ./images/img1@2x.jpg 2x"
+                            src="./images/img1.jpg" alt="Computer" width="360" height="300" />
                     </li>
                     <li class="work-list">
-                        <img src="./images/img2.jpg" alt="Application" width="360" height="300" />
+                        <img srcset="./images/img2.jpg, ./images/img2@2x.jpg 2x"
+                            src="./images/img2.jpg" alt="Application" width="360" height="300" />
                     </li>
                     <li class="work-list">
-                        <img src="./images/img3.jpg" alt="Gagets" width="360" height="300" />
+                        <img srcset="./images/img3.jpg, ./images/img3@2x.jpg 2x"
+                            src="./images/img3.jpg" alt="Gagets" width="360" height="300" />
                     </li>
                 </ul>
             </div>
@@ -127,12 +196,13 @@
         <section class="section-cloud">
             <div class="container">
                 <h2 class="section-title">Our Team</h2>
-                <ul class="list">
+                <ul class="list list-cloud">
                     <li class="cloud-list">
-                        <img src="./images/Mark-Guerrero.jpg" alt="Mark Guerrero" width="264" height="260" />
-                        <div class="text-team">
-                            <h3 class="section-list team">Mark Guerrero</h3>
-                            <p class="text team">Product Designer</p>
+                        <img srcset="./images/Mark-Guerrero.jpg, ./images/Mark-Guerrero@2x.jpg 2x" src="./images/Mark-Guerrero@2x.jpg"
+                            alt="Mark Guerrero" width="264" height="260" />
+                        <div class="text-team-block">
+                            <h3 class="team">Mark Guerrero</h3>
+                            <p class="text-team">Product Designer</p>
                             <ul class="team-soc-list list">
                                 <li class="team-soc-item">
                                     <a href="" class="team-soc-link link" target="_blank" rel="noreferrer noopener">
@@ -166,10 +236,11 @@
                         </div>
                     </li>
                     <li class="cloud-list">
-                        <img src="./images/Tom-Ford.jpg" alt="Tom Ford" width="264" height="260" />
-                        <div class="text-team">
-                            <h3 class="section-list team">Tom Ford</h3>
-                            <p class="text team">Frontend Developer</p>
+                        <img srcset="./images/Tom-Ford.jpg, ./images/Tom-Ford@2x.jpg 2x" src="./images/Tom-Ford@2x.jpg" alt="Tom Ford"
+                            width="264" height="260" />
+                        <div class="text-team-block">
+                            <h3 class="team">Tom Ford</h3>
+                            <p class="text-team">Frontend Developer</p>
                             <ul class="team-soc-list list">
                                 <li class="team-soc-item">
                                     <a href="" class="team-soc-link link" target="_blank" rel="noreferrer noopener">
@@ -203,10 +274,11 @@
                         </div>
                     </li>
                     <li class="cloud-list">
-                        <img src="./images/Camila-Garcia.jpg" alt="Camila Garcia" width="264" height="260" />
-                        <div class="text-team">
-                            <h3 class="section-list team">Camila Garcia</h3>
-                            <p class="text team">Marketing</p>
+                        <img srcset="./images/Camila-Garcia.jpg, ./images/Camila-Garcia@2x.jpg 2x" src="./images/Camila-Garcia@2x.jpg"
+                            alt="Camila Garcia" width="264" height="260" />
+                        <div class="text-team-block">
+                            <h3 class="team">Camila Garcia</h3>
+                            <p class="text-team">Marketing</p>
                             <ul class="team-soc-list list">
                                 <li class="team-soc-item">
                                     <a href="" class="team-soc-link link" target="_blank" rel="noreferrer noopener">
@@ -240,10 +312,11 @@
                         </div>
                     </li>
                     <li class="cloud-list">
-                        <img src="./images/Daniel-Wilson.jpg" alt="Daniel Wilson" width="264" height="260" />
-                        <div class="text-team">
-                            <h3 class="section-list team">Daniel Wilson</h3>
-                            <p class="text team">UI Designer</p>
+                        <img srcset="./images/Daniel-Wilson.jpg, ./images/wilson@2x.jpg 2x" src="./images/Daniel-Wilson@2x.jpg"
+                            alt="Daniel Wilson" width="264" height="260" />
+                        <div class="text-team-block">
+                            <h3 class="team">Daniel Wilson</h3>
+                            <p class="text-team">UI Designer</p>
                             <ul class="team-soc-list list">
                                 <li class="team-soc-item">
                                     <a href="" class="team-soc-link link" target="_blank" rel="noreferrer noopener">
@@ -281,7 +354,7 @@
         </section>
 
         <section class="section">
-            <div class="container">
+            <div class="container container-customers">
                 <h2 class="section-title">Customers</h2>
                 <ul class="list customers-list">
                     <li class="customers-item">
@@ -455,6 +528,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
